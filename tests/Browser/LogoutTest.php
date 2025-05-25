@@ -20,7 +20,7 @@ class LogoutTest extends DuskTestCase
             ->type('password', 'password123')
             ->press('LOG IN')
             ->press('Test User')
-            ->visit('/logout');
+            ->clickLink('Log Out');
         });
     }
 }
